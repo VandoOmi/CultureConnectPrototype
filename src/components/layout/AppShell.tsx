@@ -1,4 +1,4 @@
-import { User } from 'lucide-react';
+import { MessageCircle, User } from 'lucide-react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { navItems, mobileNavItems } from './navConfig';
 import { DesktopNavbar } from './DesktopNavbar';
@@ -23,6 +23,13 @@ export function AppShell() {
         <h1 className="font-heading text-xl font-semibold">{title}</h1>
         <div className="ml-auto flex items-center gap-2">
           <div className="h-8 w-8 rounded-full bg-white/40" />
+          <Link
+            to="/chat"
+            className="flex h-8 w-8 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white"
+            aria-label="Chat"
+          >
+            <MessageCircle size={18} />
+          </Link>
           <Link
             to="/einstellungen"
             className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-300 text-cc-ink"

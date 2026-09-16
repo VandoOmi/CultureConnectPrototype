@@ -2,7 +2,6 @@ import {
   CalendarDays,
   ClipboardList,
   Home,
-  MessageCircle,
   StickyNote,
   Vote,
 } from 'lucide-react';
@@ -26,6 +25,6 @@ export const mobileNavItems: NavItem[] = [
   { label: 'Übersicht', to: '/', icon: Home },
   { label: 'Aufgaben', to: '/aufgaben', icon: ClipboardList },
   { label: 'Kalender', to: '/kalender', icon: CalendarDays },
-  { label: 'Chat', to: '/chat', icon: MessageCircle },
+  { label: 'Umfragen', to: '/umfragen', icon: Vote },
   { label: 'Notizen', to: '/notizen', icon: StickyNote },
 ];
